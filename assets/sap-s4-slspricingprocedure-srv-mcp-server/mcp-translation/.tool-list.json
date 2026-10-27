@@ -1,0 +1,2868 @@
+[
+  {
+    "name": "get_metadata_api_slspricingprocedure_srv",
+    "title": "get_metadata_api_slspricingprocedure_srv",
+    "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+    "odataType": {
+      "metadataRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "batch_for_api_slspricingprocedure_srv",
+    "title": "batch_for_api_slspricingprocedure_srv",
+    "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+    "odataType": {
+      "batchRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slsprcgcndntypetext_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPrcgCndnTypeText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPrcgCndnTypeText collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgCndnTypeText",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slsprcgcndntypetext_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPrcgCndnTypeText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by its key from the A_SlsPrcgCndnTypeText collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgCndnTypeText",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slsprcgcndntypetext_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPrcgCndnTypeText_for_api_slspricingprocedure_srv",
+    "description": "Get the total count of entities in the A_SlsPrcgCndnTypeText collection in the api_slspricingprocedure_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgCndnTypeText",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slsprcgproceditemtext_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPrcgProcedItemText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPrcgProcedItemText collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgProcedItemText",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slsprcgproceditemtext_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPrcgProcedItemText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by its key from the A_SlsPrcgProcedItemText collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgProcedItemText",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slsprcgproceditemtext_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPrcgProcedItemText_for_api_slspricingprocedure_srv",
+    "description": "Get the total count of entities in the A_SlsPrcgProcedItemText collection in the api_slspricingprocedure_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgProcedItemText",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slspricingconditiontype_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPricingConditionType_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPricingConditionType collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingConditionType",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slspricingconditiontype_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPricingConditionType_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by its key from the A_SlsPricingConditionType collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingConditionType",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slspricingconditiontype_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPricingConditionType_for_api_slspricingprocedure_srv",
+    "description": "Get the total count of entities in the A_SlsPricingConditionType collection in the api_slspricingprocedure_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingConditionType",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slspricingprocedure_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPricingProcedure_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPricingProcedure parameterized collection in the api_slspricingprocedure_srv service. This is a parameterized entity set that requires input parameters to access. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedure",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedureItem",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slspricingprocedure_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPricingProcedure_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by key from the A_SlsPricingProcedure parameterized collection in the api_slspricingprocedure_srv service. This is a parameterized entity set that requires input parameters to access. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedure",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedureItem",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "ConditionUsage",
+              "newParameterName": "conditionusage_2"
+            },
+            {
+              "name": "ConditionApplication",
+              "newParameterName": "conditionapplication_2"
+            },
+            {
+              "name": "PricingProcedure",
+              "newParameterName": "pricingprocedure_2"
+            },
+            {
+              "name": "PricingProcedureStep",
+              "newParameterName": "pricingprocedurestep"
+            },
+            {
+              "name": "PricingProcedureCounter",
+              "newParameterName": "pricingprocedurecounter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slspricingprocedure_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPricingProcedure_for_api_slspricingprocedure_srv",
+    "description": "Count the total number of entities in the A_SlsPricingProcedure parameterized collection in the api_slspricingprocedure_srv service. This is a parameterized entity set that requires input parameters to access. Optionally use $filter to count only entities matching specific criteria.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedure",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedureItem",
+          "crudOperation": "count"
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slspricingprocedureitem_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPricingProcedureItem collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slspricingprocedureitem_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by its key from the A_SlsPricingProcedureItem collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slspricingprocedureitem_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Get the total count of entities in the A_SlsPricingProcedureItem collection in the api_slspricingprocedure_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_slspricingproceduretext_for_api_slspricingprocedure_srv",
+    "title": "list_A_SlsPricingProcedureText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a list of entities from the A_SlsPricingProcedureText collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureText",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_slspricingproceduretext_for_api_slspricingprocedure_srv",
+    "title": "get_A_SlsPricingProcedureText_for_api_slspricingprocedure_srv",
+    "description": "Retrieve a single entity by its key from the A_SlsPricingProcedureText collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureText",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_slspricingproceduretext_for_api_slspricingprocedure_srv",
+    "title": "count_A_SlsPricingProcedureText_for_api_slspricingprocedure_srv",
+    "description": "Get the total count of entities in the A_SlsPricingProcedureText collection in the api_slspricingprocedure_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureText",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_slspricingconditiontype_in_a_slsprcgcndntypetext",
+    "title": "get_to_SlsPricingConditionType_in_A_SlsPrcgCndnTypeText_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPrcgCndnTypeText to the related A_SlsPricingConditionTypeType entity via the 'to_SlsPricingConditionType' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgCndnTypeText",
+        "navigationProperty": {
+          "name": "to_SlsPricingConditionType",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_slspricingconditiontype_in_a_slsprcgcndntypetext",
+    "title": "update_to_SlsPricingConditionType_in_A_SlsPrcgCndnTypeText_for_api_slspricingprocedure_srv",
+    "description": "Update the A_SlsPricingConditionTypeType entity navigated from A_SlsPrcgCndnTypeText via the 'to_SlsPricingConditionType' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_slspricingprocedure_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgCndnTypeText",
+        "navigationProperty": {
+          "name": "to_SlsPricingConditionType",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "AccessSequence",
+              "newParameterName": "accesssequence"
+            },
+            {
+              "name": "ConditionClass",
+              "newParameterName": "conditionclass"
+            },
+            {
+              "name": "ConditionCalculationType",
+              "newParameterName": "conditioncalculationtype"
+            },
+            {
+              "name": "ConditionCategory",
+              "newParameterName": "conditioncategory"
+            },
+            {
+              "name": "PrcgCndnAmountRoundingRule",
+              "newParameterName": "prcgcndnamountroundingrule"
+            },
+            {
+              "name": "PricingConditionFunction",
+              "newParameterName": "pricingconditionfunction"
+            },
+            {
+              "name": "StructureCondition",
+              "newParameterName": "structurecondition"
+            },
+            {
+              "name": "PrcgConditionAmountSign",
+              "newParameterName": "prcgconditionamountsign"
+            },
+            {
+              "name": "IsGroupCondition",
+              "newParameterName": "isgroupcondition"
+            },
+            {
+              "name": "PrcgCndnRndngDiffsIsSettled",
+              "newParameterName": "prcgcndnrndngdiffsissettled"
+            },
+            {
+              "name": "PrcgGroupConditionRoutine",
+              "newParameterName": "prcggroupconditionroutine"
+            },
+            {
+              "name": "CndnManualEntries",
+              "newParameterName": "cndnmanualentries"
+            },
+            {
+              "name": "CndnAppliesHeader",
+              "newParameterName": "cndnappliesheader"
+            },
+            {
+              "name": "CndnAppliesItems",
+              "newParameterName": "cndnappliesitems"
+            },
+            {
+              "name": "PrcgCndnTypeDeletionIsAllowed",
+              "newParameterName": "prcgcndntypedeletionisallowed"
+            },
+            {
+              "name": "PrcgCndnAmountChangedIsAllowed",
+              "newParameterName": "prcgcndnamountchangedisallowed"
+            },
+            {
+              "name": "PrcgCndnCnvrsnFctrChgIsAllowed",
+              "newParameterName": "prcgcndncnvrsnfctrchgisallowed"
+            },
+            {
+              "name": "PrcgCndnValChgIsAllwd",
+              "newParameterName": "prcgcndnvalchgisallwd"
+            },
+            {
+              "name": "PrcgCndnPrpsdValidFromDateCode",
+              "newParameterName": "prcgcndnprpsdvalidfromdatecode"
+            },
+            {
+              "name": "PrcgCndnPrpsdValidToDateCode",
+              "newParameterName": "prcgcndnprpsdvalidtodatecode"
+            },
+            {
+              "name": "PricingProcedure",
+              "newParameterName": "pricingprocedure"
+            },
+            {
+              "name": "PrcgConditionDeletionMethod",
+              "newParameterName": "prcgconditiondeletionmethod"
+            },
+            {
+              "name": "CndnIsRelevantForLimitValue",
+              "newParameterName": "cndnisrelevantforlimitvalue"
+            },
+            {
+              "name": "PricingScaleBasisShort",
+              "newParameterName": "pricingscalebasisshort"
+            },
+            {
+              "name": "PricingScaleCheckingRule",
+              "newParameterName": "pricingscalecheckingrule"
+            },
+            {
+              "name": "PricingScaleType",
+              "newParameterName": "pricingscaletype"
+            },
+            {
+              "name": "PricingScaleRoutine",
+              "newParameterName": "pricingscaleroutine"
+            },
+            {
+              "name": "PricingScaleUnit",
+              "newParameterName": "pricingscaleunit"
+            },
+            {
+              "name": "PrcgCndnCrcyCnvrsnIsAftMltpl",
+              "newParameterName": "prcgcndncrcycnvrsnisaftmltpl"
+            },
+            {
+              "name": "IsRelevantForAccrual",
+              "newParameterName": "isrelevantforaccrual"
+            },
+            {
+              "name": "CndnIsForVariantConfiguration",
+              "newParameterName": "cndnisforvariantconfiguration"
+            },
+            {
+              "name": "PrcgCndnQtyCnvrsnIsActivated",
+              "newParameterName": "prcgcndnqtycnvrsnisactivated"
+            },
+            {
+              "name": "CndnIsRelevantForIntcoBilling",
+              "newParameterName": "cndnisrelevantforintcobilling"
+            },
+            {
+              "name": "PricingDateIdentificationCode",
+              "newParameterName": "pricingdateidentificationcode"
+            },
+            {
+              "name": "CndnValueZeroProcgCode",
+              "newParameterName": "cndnvaluezeroprocgcode"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_salespricingprocedureitem_in_a_slsprcgproceditemtext",
+    "title": "get_to_SalesPricingProcedureItem_in_A_SlsPrcgProcedItemText_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPrcgProcedItemText to the related A_SlsPricingProcedureItemType entity via the 'to_SalesPricingProcedureItem' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgProcedItemText",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedureItem",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_salespricingprocedureitem_in_a_slsprcgproceditemtext",
+    "title": "update_to_SalesPricingProcedureItem_in_A_SlsPrcgProcedItemText_for_api_slspricingprocedure_srv",
+    "description": "Update the A_SlsPricingProcedureItemType entity navigated from A_SlsPrcgProcedItemText via the 'to_SalesPricingProcedureItem' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_slspricingprocedure_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPrcgProcedItemText",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedureItem",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "ConditionType",
+              "newParameterName": "conditiontype"
+            },
+            {
+              "name": "PrcgProcedItemFromRefStep",
+              "newParameterName": "prcgproceditemfromrefstep"
+            },
+            {
+              "name": "PrcgProcedItemToRefStep",
+              "newParameterName": "prcgproceditemtorefstep"
+            },
+            {
+              "name": "ConditionIsManuallyDtmnd",
+              "newParameterName": "conditionismanuallydtmnd"
+            },
+            {
+              "name": "PrcgProcedItemSubtotal",
+              "newParameterName": "prcgproceditemsubtotal"
+            },
+            {
+              "name": "ConditionIsForStatistics",
+              "newParameterName": "conditionisforstatistics"
+            },
+            {
+              "name": "AccountKeyForGLAccount",
+              "newParameterName": "accountkeyforglaccount"
+            },
+            {
+              "name": "AcctKeyForAccrualsGLAccount",
+              "newParameterName": "acctkeyforaccrualsglaccount"
+            },
+            {
+              "name": "PricingProcedureItemPrintType",
+              "newParameterName": "pricingprocedureitemprinttype"
+            },
+            {
+              "name": "ConditionIsMandatory",
+              "newParameterName": "conditionismandatory"
+            },
+            {
+              "name": "CndnIsAcctDetnRelevant",
+              "newParameterName": "cndnisacctdetnrelevant"
+            },
+            {
+              "name": "PriceElementAccessLevel",
+              "newParameterName": "priceelementaccesslevel"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_text_in_a_slspricingconditiontype",
+    "title": "list_to_Text_in_A_SlsPricingConditionType_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPricingConditionType to related A_SlsPrcgCndnTypeTextType entities via the 'to_Text' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingConditionType",
+        "navigationProperty": {
+          "name": "to_Text",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_text_in_a_slspricingconditiontype",
+    "title": "count_to_Text_in_A_SlsPricingConditionType_for_api_slspricingprocedure_srv",
+    "description": "Count A_SlsPrcgCndnTypeTextType entities accessible via the 'to_Text' navigation property of A_SlsPricingConditionType in the api_slspricingprocedure_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingConditionType",
+        "navigationProperty": {
+          "name": "to_Text",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "ConditionType",
+            "newParameterName": "conditiontype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_salespricingprocedure_in_a_slspricingprocedureitem",
+    "title": "get_to_SalesPricingProcedure_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPricingProcedureItem to the related A_SlsPricingProcedureType entity via the 'to_SalesPricingProcedure' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedure",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_salespricingprocedure_in_a_slspricingprocedureitem",
+    "title": "update_to_SalesPricingProcedure_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Update the A_SlsPricingProcedureType entity navigated from A_SlsPricingProcedureItem via the 'to_SalesPricingProcedure' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_slspricingprocedure_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedure",
+          "crudOperation": "update",
+          "parameters": []
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_slspricingconditiontype_in_a_slspricingprocedureitem",
+    "title": "get_to_SlsPricingConditionType_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPricingProcedureItem to the related A_SlsPricingConditionTypeType entity via the 'to_SlsPricingConditionType' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_SlsPricingConditionType",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_slspricingconditiontype_in_a_slspricingprocedureitem",
+    "title": "update_to_SlsPricingConditionType_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Update the A_SlsPricingConditionTypeType entity navigated from A_SlsPricingProcedureItem via the 'to_SlsPricingConditionType' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_slspricingprocedure_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_SlsPricingConditionType",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "AccessSequence",
+              "newParameterName": "accesssequence"
+            },
+            {
+              "name": "ConditionClass",
+              "newParameterName": "conditionclass"
+            },
+            {
+              "name": "ConditionCalculationType",
+              "newParameterName": "conditioncalculationtype"
+            },
+            {
+              "name": "ConditionCategory",
+              "newParameterName": "conditioncategory"
+            },
+            {
+              "name": "PrcgCndnAmountRoundingRule",
+              "newParameterName": "prcgcndnamountroundingrule"
+            },
+            {
+              "name": "PricingConditionFunction",
+              "newParameterName": "pricingconditionfunction"
+            },
+            {
+              "name": "StructureCondition",
+              "newParameterName": "structurecondition"
+            },
+            {
+              "name": "PrcgConditionAmountSign",
+              "newParameterName": "prcgconditionamountsign"
+            },
+            {
+              "name": "IsGroupCondition",
+              "newParameterName": "isgroupcondition"
+            },
+            {
+              "name": "PrcgCndnRndngDiffsIsSettled",
+              "newParameterName": "prcgcndnrndngdiffsissettled"
+            },
+            {
+              "name": "PrcgGroupConditionRoutine",
+              "newParameterName": "prcggroupconditionroutine"
+            },
+            {
+              "name": "CndnManualEntries",
+              "newParameterName": "cndnmanualentries"
+            },
+            {
+              "name": "CndnAppliesHeader",
+              "newParameterName": "cndnappliesheader"
+            },
+            {
+              "name": "CndnAppliesItems",
+              "newParameterName": "cndnappliesitems"
+            },
+            {
+              "name": "PrcgCndnTypeDeletionIsAllowed",
+              "newParameterName": "prcgcndntypedeletionisallowed"
+            },
+            {
+              "name": "PrcgCndnAmountChangedIsAllowed",
+              "newParameterName": "prcgcndnamountchangedisallowed"
+            },
+            {
+              "name": "PrcgCndnCnvrsnFctrChgIsAllowed",
+              "newParameterName": "prcgcndncnvrsnfctrchgisallowed"
+            },
+            {
+              "name": "PrcgCndnValChgIsAllwd",
+              "newParameterName": "prcgcndnvalchgisallwd"
+            },
+            {
+              "name": "PrcgCndnPrpsdValidFromDateCode",
+              "newParameterName": "prcgcndnprpsdvalidfromdatecode"
+            },
+            {
+              "name": "PrcgCndnPrpsdValidToDateCode",
+              "newParameterName": "prcgcndnprpsdvalidtodatecode"
+            },
+            {
+              "name": "PricingProcedure",
+              "newParameterName": "pricingprocedure_2"
+            },
+            {
+              "name": "PrcgConditionDeletionMethod",
+              "newParameterName": "prcgconditiondeletionmethod"
+            },
+            {
+              "name": "CndnIsRelevantForLimitValue",
+              "newParameterName": "cndnisrelevantforlimitvalue"
+            },
+            {
+              "name": "PricingScaleBasisShort",
+              "newParameterName": "pricingscalebasisshort"
+            },
+            {
+              "name": "PricingScaleCheckingRule",
+              "newParameterName": "pricingscalecheckingrule"
+            },
+            {
+              "name": "PricingScaleType",
+              "newParameterName": "pricingscaletype"
+            },
+            {
+              "name": "PricingScaleRoutine",
+              "newParameterName": "pricingscaleroutine"
+            },
+            {
+              "name": "PricingScaleUnit",
+              "newParameterName": "pricingscaleunit"
+            },
+            {
+              "name": "PrcgCndnCrcyCnvrsnIsAftMltpl",
+              "newParameterName": "prcgcndncrcycnvrsnisaftmltpl"
+            },
+            {
+              "name": "IsRelevantForAccrual",
+              "newParameterName": "isrelevantforaccrual"
+            },
+            {
+              "name": "CndnIsForVariantConfiguration",
+              "newParameterName": "cndnisforvariantconfiguration"
+            },
+            {
+              "name": "PrcgCndnQtyCnvrsnIsActivated",
+              "newParameterName": "prcgcndnqtycnvrsnisactivated"
+            },
+            {
+              "name": "CndnIsRelevantForIntcoBilling",
+              "newParameterName": "cndnisrelevantforintcobilling"
+            },
+            {
+              "name": "PricingDateIdentificationCode",
+              "newParameterName": "pricingdateidentificationcode"
+            },
+            {
+              "name": "CndnValueZeroProcgCode",
+              "newParameterName": "cndnvaluezeroprocgcode"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_text_in_a_slspricingprocedureitem",
+    "title": "list_to_Text_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPricingProcedureItem to related A_SlsPrcgProcedItemTextType entities via the 'to_Text' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_Text",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_text_in_a_slspricingprocedureitem",
+    "title": "count_to_Text_in_A_SlsPricingProcedureItem_for_api_slspricingprocedure_srv",
+    "description": "Count A_SlsPrcgProcedItemTextType entities accessible via the 'to_Text' navigation property of A_SlsPricingProcedureItem in the api_slspricingprocedure_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureItem",
+        "navigationProperty": {
+          "name": "to_Text",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          },
+          {
+            "name": "PricingProcedureStep",
+            "newParameterName": "pricingprocedurestep"
+          },
+          {
+            "name": "PricingProcedureCounter",
+            "newParameterName": "pricingprocedurecounter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_salespricingprocedure_in_a_slspricingproceduretext",
+    "title": "get_to_SalesPricingProcedure_in_A_SlsPricingProcedureText_for_api_slspricingprocedure_srv",
+    "description": "Navigate from A_SlsPricingProcedureText to the related A_SlsPricingProcedureType entity via the 'to_SalesPricingProcedure' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureText",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedure",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_salespricingprocedure_in_a_slspricingproceduretext",
+    "title": "update_to_SalesPricingProcedure_in_A_SlsPricingProcedureText_for_api_slspricingprocedure_srv",
+    "description": "Update the A_SlsPricingProcedureType entity navigated from A_SlsPricingProcedureText via the 'to_SalesPricingProcedure' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_slspricingprocedure_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_SlsPricingProcedureText",
+        "navigationProperty": {
+          "name": "to_SalesPricingProcedure",
+          "crudOperation": "update",
+          "parameters": []
+        },
+        "parameters": [
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "ConditionUsage",
+            "newParameterName": "conditionusage"
+          },
+          {
+            "name": "ConditionApplication",
+            "newParameterName": "conditionapplication"
+          },
+          {
+            "name": "PricingProcedure",
+            "newParameterName": "pricingprocedure"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  }
+]

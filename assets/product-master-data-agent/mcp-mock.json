@@ -1,0 +1,795 @@
+{
+  "servers": {
+    "sap-s4-product-srv": {
+      "mcp_server_name": "sap.s4:apiResource:API_PRODUCT_SRV:v1",
+      "description": "MCP server for the api_product_srv service.",
+      "tools": {
+        "get_metadata_api_product_srv": {
+          "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "$metadata": "Mock OData metadata"
+          }
+        },
+        "batch_for_api_product_srv": {
+          "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "id": "mock-001",
+              "status": "active"
+            }
+          }
+        },
+        "list_a_product_for_api_product_srv": {
+          "description": "Retrieve a list of entities from the A_Product collection in the api_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "ProductType": "FERT",
+                  "BaseUnit": "PC",
+                  "ProductGroup": "L001",
+                  "Division": "00",
+                  "CreationDate": "/Date(1609459200000)/",
+                  "ChangedDateTime": "/Date(1744588800000)/"
+                },
+                {
+                  "Product": "TG11",
+                  "ProductType": "FERT",
+                  "BaseUnit": "PC",
+                  "ProductGroup": "L001",
+                  "Division": "00",
+                  "CreationDate": "/Date(1609459200000)/",
+                  "ChangedDateTime": "/Date(1744588800000)/"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_product_for_api_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_Product collection in the api_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ProductType": "FERT",
+              "BaseUnit": "PC",
+              "ProductGroup": "L001",
+              "Division": "00",
+              "CreationDate": "/Date(1609459200000)/",
+              "ChangedDateTime": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "list_a_productbasictext_for_api_product_srv": {
+          "description": "Retrieve a list of entities from the A_ProductBasicText collection in the api_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "Language": "EN",
+                  "LongText": "Full description of Standard Pump 100 (Mock Data)"
+                },
+                {
+                  "Product": "TG11",
+                  "Language": "EN",
+                  "LongText": "Full description of Standard Pump 100 (Mock Data)"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_productbasictext_for_api_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ProductBasicText collection in the api_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Language": "EN",
+              "LongText": "Full description of Standard Pump 100 (Mock Data)"
+            }
+          }
+        },
+        "list_a_productdescription_for_api_product_srv": {
+          "description": "Retrieve a list of entities from the A_ProductDescription collection in the api_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "Language": "EN",
+                  "ProductDescription": "Standard Pump 100 (Mock Data)"
+                },
+                {
+                  "Product": "TG11",
+                  "Language": "EN",
+                  "ProductDescription": "Standard Pump 100 (Mock Data)"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_productdescription_for_api_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ProductDescription collection in the api_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Language": "EN",
+              "ProductDescription": "Standard Pump 100 (Mock Data)"
+            }
+          }
+        },
+        "list_a_productplant_for_api_product_srv": {
+          "description": "Retrieve a list of entities from the A_ProductPlant collection in the api_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "ProductType": "FERT",
+                  "BaseUnit": "PC",
+                  "ProductGroup": "L001",
+                  "Division": "00",
+                  "CreationDate": "/Date(1609459200000)/",
+                  "ChangedDateTime": "/Date(1744588800000)/"
+                },
+                {
+                  "Product": "TG11",
+                  "ProductType": "FERT",
+                  "BaseUnit": "PC",
+                  "ProductGroup": "L001",
+                  "Division": "00",
+                  "CreationDate": "/Date(1609459200000)/",
+                  "ChangedDateTime": "/Date(1744588800000)/"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_productplant_for_api_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ProductPlant collection in the api_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ProductType": "FERT",
+              "BaseUnit": "PC",
+              "ProductGroup": "L001",
+              "Division": "00",
+              "CreationDate": "/Date(1609459200000)/",
+              "ChangedDateTime": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "list_a_productsales_for_api_product_srv": {
+          "description": "Retrieve a list of entities from the A_ProductSales collection in the api_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "ProductSalesOrg": "1000",
+                  "ProductDistributionChnl": "10",
+                  "SalesUnit": "PC"
+                },
+                {
+                  "Product": "TG11",
+                  "ProductSalesOrg": "1000",
+                  "ProductDistributionChnl": "10",
+                  "SalesUnit": "PC"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_productsales_for_api_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ProductSales collection in the api_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ProductSalesOrg": "1000",
+              "ProductDistributionChnl": "10",
+              "SalesUnit": "PC"
+            }
+          }
+        }
+      }
+    },
+    "sap-s4-clfn-product-srv": {
+      "mcp_server_name": "sap.s4:apiResource:API_CLFN_PRODUCT_SRV:v1",
+      "description": "MCP server for the api_clfn_product_srv service.",
+      "tools": {
+        "get_metadata_api_clfn_product_srv": {
+          "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ClassType": "001",
+              "KeyDate": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "batch_for_api_clfn_product_srv": {
+          "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ClassType": "001",
+              "KeyDate": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "list_a_clfnproduct_for_api_clfn_product_srv": {
+          "description": "Retrieve a list of entities from the A_ClfnProduct collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "ClassType": "001",
+                  "KeyDate": "/Date(1744588800000)/"
+                },
+                {
+                  "Product": "TG11",
+                  "ClassType": "001",
+                  "KeyDate": "/Date(1744588800000)/"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_clfnproduct_for_api_clfn_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ClfnProduct collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ClassType": "001",
+              "KeyDate": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "list_a_clfnclassforkeydate_for_api_clfn_product_srv": {
+          "description": "Retrieve a list of entities from the A_ClfnClassForKeyDate collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "ClassType": "001",
+                  "KeyDate": "/Date(1744588800000)/"
+                },
+                {
+                  "Product": "TG11",
+                  "ClassType": "001",
+                  "KeyDate": "/Date(1744588800000)/"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_clfnclassforkeydate_for_api_clfn_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ClfnClassForKeyDate collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "ClassType": "001",
+              "KeyDate": "/Date(1744588800000)/"
+            }
+          }
+        },
+        "list_a_productdescription_for_api_clfn_product_srv": {
+          "description": "Retrieve a list of entities from the A_ProductDescription collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "Language": "EN",
+                  "ProductDescription": "Standard Pump 100 (Mock Data)"
+                },
+                {
+                  "Product": "TG11",
+                  "Language": "EN",
+                  "ProductDescription": "Standard Pump 100 (Mock Data)"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_productdescription_for_api_clfn_product_srv": {
+          "description": "Retrieve a single entity by its key from the A_ProductDescription collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Language": "EN",
+              "ProductDescription": "Standard Pump 100 (Mock Data)"
+            }
+          }
+        }
+      }
+    },
+    "sap-s4-product-availy-info": {
+      "mcp_server_name": "sap.s4:apiResource:CE_API_PRODUCT_AVAILY_INFO_0001:v1",
+      "description": "MCP server for the sap_self service.",
+      "tools": {
+        "get_metadata_sap_self": {
+          "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "$metadata": "Mock OData metadata"
+          }
+        },
+        "batch_for_sap_self": {
+          "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "id": "mock-001",
+              "status": "active"
+            }
+          }
+        },
+        "list_productmrparea_for_sap_self": {
+          "description": "Retrieve a list of entities from the ProductMRPArea collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "Plant": "1000",
+                  "MRPArea": "1000",
+                  "MRPType": "PD"
+                },
+                {
+                  "Product": "TG11",
+                  "Plant": "1000",
+                  "MRPArea": "1000",
+                  "MRPType": "PD"
+                }
+              ]
+            }
+          }
+        },
+        "get_productmrparea_for_sap_self": {
+          "description": "Retrieve a single entity by its key from the ProductMRPArea collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "MRPArea": "1000",
+              "MRPType": "PD"
+            }
+          }
+        },
+        "list_productstoragelocation_for_sap_self": {
+          "description": "Retrieve a list of entities from the ProductStorageLocation collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "Product": "P-100",
+                  "Plant": "1000",
+                  "StorageLocation": "0001",
+                  "PhysInventoryBlockInd": ""
+                },
+                {
+                  "Product": "TG11",
+                  "Plant": "1000",
+                  "StorageLocation": "0001",
+                  "PhysInventoryBlockInd": ""
+                }
+              ]
+            }
+          }
+        },
+        "get_productstoragelocation_for_sap_self": {
+          "description": "Retrieve a single entity by its key from the ProductStorageLocation collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "StorageLocation": "0001",
+              "PhysInventoryBlockInd": ""
+            }
+          }
+        },
+        "ermineavailabilityatdatetme_on_sap_self_atprlvtproductstorloc": {
+          "description": "OData bound action: DetermineAvailabilityAtDateTme on entity SAP__self.ATPRlvtProductStorLoc_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyAtDteTmeR",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "AvailableQuantity": "50.000",
+              "BaseUnit": "PC"
+            }
+          }
+        },
+        "ermineavailabilityatdatetme_on_sap_self_atprlvtproductmrparea": {
+          "description": "OData bound action: DetermineAvailabilityAtDateTme on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyAtDteTmeR",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "MRPArea": "1000",
+              "MRPType": "PD"
+            }
+          }
+        },
+        "mavailabilitytimeseries_on_sap_self_atprlvtproductmrparea_type": {
+          "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "MRPArea": "1000",
+              "MRPType": "PD"
+            }
+          }
+        },
+        "mavailabilitytimeseries_on_sap_self_atprlvtproductstorloc_type": {
+          "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProductStorLoc_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "Product": "P-100",
+              "Plant": "1000",
+              "AvailableQuantity": "50.000",
+              "BaseUnit": "PC"
+            }
+          }
+        }
+      }
+    },
+    "sap-s4-slspricingprocedure": {
+      "mcp_server_name": "sap.s4:apiResource:API_SLSPRICINGPROCEDURE_SRV:v1",
+      "description": "MCP server for the api_slspricingprocedure_srv service.",
+      "tools": {
+        "get_metadata_api_slspricingprocedure_srv": {
+          "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "SalesPricingProcedureCategory": "A"
+            }
+          }
+        },
+        "batch_for_api_slspricingprocedure_srv": {
+          "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "SalesPricingProcedureCategory": "A"
+            }
+          }
+        },
+        "list_a_slspricingconditiontype_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a list of entities from the A_SlsPricingConditionType collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureCategory": "A"
+                },
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureCategory": "A",
+                  "Product": "item-002"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_slspricingconditiontype_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a single entity by its key from the A_SlsPricingConditionType collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "SalesPricingProcedureCategory": "A"
+            }
+          }
+        },
+        "list_a_slspricingprocedure_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a list of entities from the A_SlsPricingProcedure parameterized collection in the api_slspricingprocedure_srv service. This is a parameterized entity set that requires input parameters to access. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureCategory": "A"
+                },
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureCategory": "A",
+                  "Product": "item-002"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_slspricingprocedure_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a single entity by key from the A_SlsPricingProcedure parameterized collection in the api_slspricingprocedure_srv service. This is a parameterized entity set that requires input parameters to access. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "SalesPricingProcedureCategory": "A"
+            }
+          }
+        },
+        "list_a_slspricingprocedureitem_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a list of entities from the A_SlsPricingProcedureItem collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureStep": "10",
+                  "SalesPricingCondType": "PR00",
+                  "SalesPricingProcedureCounter": "0"
+                },
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "SalesPricingProcedureStep": "10",
+                  "SalesPricingCondType": "PR00",
+                  "SalesPricingProcedureCounter": "0",
+                  "Product": "item-002"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_slspricingprocedureitem_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a single entity by its key from the A_SlsPricingProcedureItem collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "SalesPricingProcedureStep": "10",
+              "SalesPricingCondType": "PR00",
+              "SalesPricingProcedureCounter": "0"
+            }
+          }
+        },
+        "list_a_slspricingproceduretext_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a list of entities from the A_SlsPricingProcedureText collection in the api_slspricingprocedure_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "results": [
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "Language": "EN",
+                  "SalesPricingProcedureName": "Standard (Mock)"
+                },
+                {
+                  "SalesPricingProcedure": "RVAA01",
+                  "Language": "EN",
+                  "SalesPricingProcedureName": "Standard (Mock)",
+                  "Product": "item-002"
+                }
+              ]
+            }
+          }
+        },
+        "get_a_slspricingproceduretext_for_api_slspricingprocedure_srv": {
+          "description": "Retrieve a single entity by its key from the A_SlsPricingProcedureText collection in the api_slspricingprocedure_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_slspricingprocedure_srv tool first to get the metadata.",
+          "input_schema": {
+            "type": "object",
+            "properties": {},
+            "required": []
+          },
+          "mock_response": {
+            "d": {
+              "SalesPricingProcedure": "RVAA01",
+              "Language": "EN",
+              "SalesPricingProcedureName": "Standard (Mock)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "created_for_agent": "product-master-data-agent",
+    "mock_mode": true,
+    "deterministic": true,
+    "total_servers": 4,
+    "total_tools": 40,
+    "generated_from": [
+      "assets/sap-s4-product-srv-mcp-server/mcp-translation/translation.json",
+      "assets/sap-s4-clfn-product-srv-mcp-server/mcp-translation/translation.json",
+      "assets/sap-s4-product-availy-info-0001-mcp-server/mcp-translation/translation.json",
+      "assets/sap-s4-slspricingprocedure-srv-mcp-server/mcp-translation/translation.json"
+    ],
+    "generation_date": "2026-10-27"
+  }
+}

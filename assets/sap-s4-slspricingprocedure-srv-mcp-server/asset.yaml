@@ -1,0 +1,21 @@
+apiVersion: asset.sap/v1
+kind: Asset
+type: mcp-server
+
+metadata:
+  name: sap-s4-slspricingprocedure-srv-mcp-server
+  description: Exposes SAP S/4HANA Pricing Procedure in Sales OData operations as MCP tools for querying sales pricing procedures and their items.
+  version: "1.0.0"
+  translation: mcp-translation/translation.json
+  apiSpec: mcp-translation/api-spec.edmx
+
+provides:
+  apis:
+    - name: sap-s4-slspricingprocedure-srv-mcp-server
+      kind: mcp-server
+      ordId: customer.build:apiResource:product-master-data-bed9e.sap-s4-slspricingprocedure-srv-mcp-server:v1
+
+requires:
+  - name: API_SLSPRICINGPROCEDURE_SRV
+    kind: api
+    ordId: sap.s4:apiResource:API_SLSPRICINGPROCEDURE_SRV:v1

@@ -1,0 +1,5169 @@
+[
+  {
+    "name": "get_metadata_api_clfn_product_srv",
+    "title": "get_metadata_api_clfn_product_srv",
+    "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+    "odataType": {
+      "metadataRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "batch_for_api_clfn_product_srv",
+    "title": "batch_for_api_clfn_product_srv",
+    "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+    "odataType": {
+      "batchRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productplantprocurement_for_api_clfn_product_srv",
+    "title": "list_A_ProductPlantProcurement_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductPlantProcurement collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlantProcurement",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productplantprocurement_for_api_clfn_product_srv",
+    "title": "get_A_ProductPlantProcurement_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductPlantProcurement collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlantProcurement",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productplantprocurement_for_api_clfn_product_srv",
+    "title": "count_A_ProductPlantProcurement_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductPlantProcurement collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlantProcurement",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productstoragelocation_for_api_clfn_product_srv",
+    "title": "list_A_ProductStorageLocation_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductStorageLocation collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductStorageLocation",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productstoragelocation_for_api_clfn_product_srv",
+    "title": "get_A_ProductStorageLocation_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductStorageLocation collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductStorageLocation",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          },
+          {
+            "name": "StorageLocation",
+            "newParameterName": "storagelocation"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productstoragelocation_for_api_clfn_product_srv",
+    "title": "count_A_ProductStorageLocation_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductStorageLocation collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductStorageLocation",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productsupplyplanning_for_api_clfn_product_srv",
+    "title": "list_A_ProductSupplyPlanning_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductSupplyPlanning collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSupplyPlanning",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productsupplyplanning_for_api_clfn_product_srv",
+    "title": "get_A_ProductSupplyPlanning_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductSupplyPlanning collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSupplyPlanning",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productsupplyplanning_for_api_clfn_product_srv",
+    "title": "count_A_ProductSupplyPlanning_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductSupplyPlanning collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSupplyPlanning",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ClfnProduct collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "get_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ClfnProduct collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ClfnProduct collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_clfnclassforkeydate_for_api_clfn_product_srv",
+    "title": "list_A_ClfnClassForKeyDate_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ClfnClassForKeyDate collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnClassForKeyDate",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_clfnclassforkeydate_for_api_clfn_product_srv",
+    "title": "get_A_ClfnClassForKeyDate_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ClfnClassForKeyDate collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnClassForKeyDate",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_clfnclassforkeydate_for_api_clfn_product_srv",
+    "title": "count_A_ClfnClassForKeyDate_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ClfnClassForKeyDate collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnClassForKeyDate",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productdescription_for_api_clfn_product_srv",
+    "title": "list_A_ProductDescription_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductDescription collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductDescription",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productdescription_for_api_clfn_product_srv",
+    "title": "get_A_ProductDescription_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductDescription collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductDescription",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Language",
+            "newParameterName": "language"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productdescription_for_api_clfn_product_srv",
+    "title": "count_A_ProductDescription_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductDescription collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductDescription",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productplant_for_api_clfn_product_srv",
+    "title": "list_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductPlant collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productplant_for_api_clfn_product_srv",
+    "title": "get_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductPlant collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productplant_for_api_clfn_product_srv",
+    "title": "count_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductPlant collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productsalesdelivery_for_api_clfn_product_srv",
+    "title": "list_A_ProductSalesDelivery_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductSalesDelivery collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesDelivery",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productsalesdelivery_for_api_clfn_product_srv",
+    "title": "get_A_ProductSalesDelivery_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductSalesDelivery collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesDelivery",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ProductSalesOrg",
+            "newParameterName": "productsalesorg"
+          },
+          {
+            "name": "ProductDistributionChnl",
+            "newParameterName": "productdistributionchnl"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productsalesdelivery_for_api_clfn_product_srv",
+    "title": "count_A_ProductSalesDelivery_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductSalesDelivery collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesDelivery",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productsalestax_for_api_clfn_product_srv",
+    "title": "list_A_ProductSalesTax_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductSalesTax collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesTax",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productsalestax_for_api_clfn_product_srv",
+    "title": "get_A_ProductSalesTax_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductSalesTax collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesTax",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Country",
+            "newParameterName": "country"
+          },
+          {
+            "name": "TaxCategory",
+            "newParameterName": "taxcategory"
+          },
+          {
+            "name": "TaxClassification",
+            "newParameterName": "taxclassification"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productsalestax_for_api_clfn_product_srv",
+    "title": "count_A_ProductSalesTax_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductSalesTax collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductSalesTax",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productworkscheduling_for_api_clfn_product_srv",
+    "title": "list_A_ProductWorkScheduling_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductWorkScheduling collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductWorkScheduling",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productworkscheduling_for_api_clfn_product_srv",
+    "title": "get_A_ProductWorkScheduling_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductWorkScheduling collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductWorkScheduling",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productworkscheduling_for_api_clfn_product_srv",
+    "title": "count_A_ProductWorkScheduling_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductWorkScheduling collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductWorkScheduling",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productcharc_for_api_clfn_product_srv",
+    "title": "list_A_ProductCharc_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductCharc collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharc",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productcharc_for_api_clfn_product_srv",
+    "title": "get_A_ProductCharc_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductCharc collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharc",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          },
+          {
+            "name": "ClassType",
+            "newParameterName": "classtype"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productcharc_for_api_clfn_product_srv",
+    "title": "count_A_ProductCharc_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductCharc collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharc",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productcharcvalue_for_api_clfn_product_srv",
+    "title": "list_A_ProductCharcValue_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductCharcValue collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharcValue",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productcharcvalue_for_api_clfn_product_srv",
+    "title": "get_A_ProductCharcValue_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductCharcValue collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharcValue",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassType",
+            "newParameterName": "classtype"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          },
+          {
+            "name": "CharcValuePositionNumber",
+            "newParameterName": "charcvaluepositionnumber"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productcharcvalue_for_api_clfn_product_srv",
+    "title": "count_A_ProductCharcValue_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductCharcValue collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharcValue",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productclass_for_api_clfn_product_srv",
+    "title": "list_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductClass collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productclass_for_api_clfn_product_srv",
+    "title": "get_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductClass collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productclass_for_api_clfn_product_srv",
+    "title": "count_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductClass collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_a_productclasscharc_for_api_clfn_product_srv",
+    "title": "list_A_ProductClassCharc_for_api_clfn_product_srv",
+    "description": "Retrieve a list of entities from the A_ProductClassCharc collection in the api_clfn_product_srv service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClassCharc",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "inlinecount"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_a_productclasscharc_for_api_clfn_product_srv",
+    "title": "get_A_ProductClassCharc_for_api_clfn_product_srv",
+    "description": "Retrieve a single entity by its key from the A_ProductClassCharc collection in the api_clfn_product_srv service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClassCharc",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_a_productclasscharc_for_api_clfn_product_srv",
+    "title": "count_A_ProductClassCharc_for_api_clfn_product_srv",
+    "description": "Get the total count of entities in the A_ProductClassCharc collection in the api_clfn_product_srv service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClassCharc",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_description_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_to_Description_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductDescriptionType entities via the 'to_Description' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_Description",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_description_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_to_Description_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductDescriptionType entities accessible via the 'to_Description' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_Description",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_plant_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_to_Plant_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductPlantType entities via the 'to_Plant' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_Plant",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_plant_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_to_Plant_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductPlantType entities accessible via the 'to_Plant' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_Plant",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_productcharc_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_to_ProductCharc_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductCharcType entities via the 'to_ProductCharc' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductCharc",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_productcharc_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_to_ProductCharc_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductCharcType entities accessible via the 'to_ProductCharc' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductCharc",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_productclass_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_to_ProductClass_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductClassType entities via the 'to_ProductClass' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductClass",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_productclass_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_to_ProductClass_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductClassType entities accessible via the 'to_ProductClass' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductClass",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_productsalestax_in_a_clfnproduct",
+    "title": "list_to_ProductSalesTax_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductSalesTaxType entities via the 'to_ProductSalesTax' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductSalesTax",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_productsalestax_in_a_clfnproduct",
+    "title": "count_to_ProductSalesTax_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductSalesTaxType entities accessible via the 'to_ProductSalesTax' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_ProductSalesTax",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_salesdelivery_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "list_to_SalesDelivery_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Navigate from A_ClfnProduct to related A_ProductSalesDeliveryType entities via the 'to_SalesDelivery' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_SalesDelivery",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_salesdelivery_in_a_clfnproduct_for_api_clfn_product_srv",
+    "title": "count_to_SalesDelivery_in_A_ClfnProduct_for_api_clfn_product_srv",
+    "description": "Count A_ProductSalesDeliveryType entities accessible via the 'to_SalesDelivery' navigation property of A_ClfnProduct in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ClfnProduct",
+        "navigationProperty": {
+          "name": "to_SalesDelivery",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_productplantprocurement_in_a_productplant",
+    "title": "get_to_ProductPlantProcurement_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductPlant to the related A_ProductPlantProcurementType entity via the 'to_ProductPlantProcurement' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductPlantProcurement",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_productplantprocurement_in_a_productplant",
+    "title": "update_to_ProductPlantProcurement_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Update the A_ProductPlantProcurementType entity navigated from A_ProductPlant via the 'to_ProductPlantProcurement' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_clfn_product_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductPlantProcurement",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "IsAutoPurOrdCreationAllowed",
+              "newParameterName": "isautopurordcreationallowed"
+            },
+            {
+              "name": "IsSourceListRequired",
+              "newParameterName": "issourcelistrequired"
+            },
+            {
+              "name": "SourceOfSupplyCategory",
+              "newParameterName": "sourceofsupplycategory"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_productsupplyplanning_in_a_productplant",
+    "title": "get_to_ProductSupplyPlanning_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductPlant to the related A_ProductSupplyPlanningType entity via the 'to_ProductSupplyPlanning' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductSupplyPlanning",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_productsupplyplanning_in_a_productplant",
+    "title": "update_to_ProductSupplyPlanning_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Update the A_ProductSupplyPlanningType entity navigated from A_ProductPlant via the 'to_ProductSupplyPlanning' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_clfn_product_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductSupplyPlanning",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "FixedLotSizeQuantity",
+              "newParameterName": "fixedlotsizequantity"
+            },
+            {
+              "name": "MaximumLotSizeQuantity",
+              "newParameterName": "maximumlotsizequantity"
+            },
+            {
+              "name": "MinimumLotSizeQuantity",
+              "newParameterName": "minimumlotsizequantity"
+            },
+            {
+              "name": "LotSizeRoundingQuantity",
+              "newParameterName": "lotsizeroundingquantity"
+            },
+            {
+              "name": "LotSizingProcedure",
+              "newParameterName": "lotsizingprocedure"
+            },
+            {
+              "name": "MRPType",
+              "newParameterName": "mrptype"
+            },
+            {
+              "name": "MRPResponsible",
+              "newParameterName": "mrpresponsible"
+            },
+            {
+              "name": "SafetyStockQuantity",
+              "newParameterName": "safetystockquantity"
+            },
+            {
+              "name": "MinimumSafetyStockQuantity",
+              "newParameterName": "minimumsafetystockquantity"
+            },
+            {
+              "name": "PlanningTimeFence",
+              "newParameterName": "planningtimefence"
+            },
+            {
+              "name": "ABCIndicator",
+              "newParameterName": "abcindicator"
+            },
+            {
+              "name": "MaximumStockQuantity",
+              "newParameterName": "maximumstockquantity"
+            },
+            {
+              "name": "ReorderThresholdQuantity",
+              "newParameterName": "reorderthresholdquantity"
+            },
+            {
+              "name": "PlannedDeliveryDurationInDays",
+              "newParameterName": "planneddeliverydurationindays"
+            },
+            {
+              "name": "SafetyDuration",
+              "newParameterName": "safetyduration"
+            },
+            {
+              "name": "PlanningStrategyGroup",
+              "newParameterName": "planningstrategygroup"
+            },
+            {
+              "name": "TotalReplenishmentLeadTime",
+              "newParameterName": "totalreplenishmentleadtime"
+            },
+            {
+              "name": "ProcurementType",
+              "newParameterName": "procurementtype"
+            },
+            {
+              "name": "ProcurementSubType",
+              "newParameterName": "procurementsubtype"
+            },
+            {
+              "name": "AssemblyScrapPercent",
+              "newParameterName": "assemblyscrappercent"
+            },
+            {
+              "name": "AvailabilityCheckType",
+              "newParameterName": "availabilitychecktype"
+            },
+            {
+              "name": "GoodsReceiptDuration",
+              "newParameterName": "goodsreceiptduration"
+            },
+            {
+              "name": "MRPGroup",
+              "newParameterName": "mrpgroup"
+            },
+            {
+              "name": "BaseUnit",
+              "newParameterName": "baseunit"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_productworkscheduling_in_a_productplant",
+    "title": "get_to_ProductWorkScheduling_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductPlant to the related A_ProductWorkSchedulingType entity via the 'to_ProductWorkScheduling' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductWorkScheduling",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_productworkscheduling_in_a_productplant",
+    "title": "update_to_ProductWorkScheduling_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Update the A_ProductWorkSchedulingType entity navigated from A_ProductPlant via the 'to_ProductWorkScheduling' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_clfn_product_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_ProductWorkScheduling",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "MaterialBaseQuantity",
+              "newParameterName": "materialbasequantity"
+            },
+            {
+              "name": "UnlimitedOverDelivIsAllowed",
+              "newParameterName": "unlimitedoverdelivisallowed"
+            },
+            {
+              "name": "OverDelivToleranceLimit",
+              "newParameterName": "overdelivtolerancelimit"
+            },
+            {
+              "name": "UnderDelivToleranceLimit",
+              "newParameterName": "underdelivtolerancelimit"
+            },
+            {
+              "name": "ProductionInvtryManagedLoc",
+              "newParameterName": "productioninvtrymanagedloc"
+            },
+            {
+              "name": "BaseUnit",
+              "newParameterName": "baseunit"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_storagelocation_in_a_productplant",
+    "title": "list_to_StorageLocation_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductPlant to related A_ProductStorageLocationType entities via the 'to_StorageLocation' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_StorageLocation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_storagelocation_in_a_productplant",
+    "title": "count_to_StorageLocation_in_A_ProductPlant_for_api_clfn_product_srv",
+    "description": "Count A_ProductStorageLocationType entities accessible via the 'to_StorageLocation' navigation property of A_ProductPlant in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductPlant",
+        "navigationProperty": {
+          "name": "to_StorageLocation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "Plant",
+            "newParameterName": "plant"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_valuation_in_a_productcharc_for_api_clfn_product_srv",
+    "title": "list_to_Valuation_in_A_ProductCharc_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductCharc to related A_ProductCharcValueType entities via the 'to_Valuation' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharc",
+        "navigationProperty": {
+          "name": "to_Valuation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          },
+          {
+            "name": "ClassType",
+            "newParameterName": "classtype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_valuation_in_a_productcharc_for_api_clfn_product_srv",
+    "title": "count_to_Valuation_in_A_ProductCharc_for_api_clfn_product_srv",
+    "description": "Count A_ProductCharcValueType entities accessible via the 'to_Valuation' navigation property of A_ProductCharc in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductCharc",
+        "navigationProperty": {
+          "name": "to_Valuation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          },
+          {
+            "name": "ClassType",
+            "newParameterName": "classtype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_characteristics_in_a_productclass",
+    "title": "list_to_Characteristics_in_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductClass to related A_ProductClassCharcType entities via the 'to_Characteristics' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "navigationProperty": {
+          "name": "to_Characteristics",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_characteristics_in_a_productclass",
+    "title": "count_to_Characteristics_in_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Count A_ProductClassCharcType entities accessible via the 'to_Characteristics' navigation property of A_ProductClass in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "navigationProperty": {
+          "name": "to_Characteristics",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_to_classdetails_in_a_productclass_for_api_clfn_product_srv",
+    "title": "get_to_ClassDetails_in_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductClass to the related A_ClfnClassForKeyDateType entity via the 'to_ClassDetails' navigation property. Supports $select and $expand query options. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "navigationProperty": {
+          "name": "to_ClassDetails",
+          "crudOperation": "readByKey",
+          "parameters": [
+            {
+              "name": "select"
+            },
+            {
+              "name": "expand"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "update_to_classdetails_in_a_productclass",
+    "title": "update_to_ClassDetails_in_A_ProductClass_for_api_clfn_product_srv",
+    "description": "Update the A_ClfnClassForKeyDateType entity navigated from A_ProductClass via the 'to_ClassDetails' navigation property (HTTP PATCH). Provide the parent key and the properties to update. If the structure is unknown, call get_metadata_api_clfn_product_srv tool first.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClass",
+        "navigationProperty": {
+          "name": "to_ClassDetails",
+          "crudOperation": "update",
+          "parameters": [
+            {
+              "name": "Class",
+              "newParameterName": "class"
+            },
+            {
+              "name": "ClassStatus",
+              "newParameterName": "classstatus"
+            },
+            {
+              "name": "ClassGroup",
+              "newParameterName": "classgroup"
+            },
+            {
+              "name": "ClassSearchAuthGrp",
+              "newParameterName": "classsearchauthgrp"
+            },
+            {
+              "name": "ClassClassfctnAuthGrp",
+              "newParameterName": "classclassfctnauthgrp"
+            },
+            {
+              "name": "ClassMaintAuthGrp",
+              "newParameterName": "classmaintauthgrp"
+            },
+            {
+              "name": "DocNumber",
+              "newParameterName": "docnumber"
+            },
+            {
+              "name": "DocumentType",
+              "newParameterName": "documenttype"
+            },
+            {
+              "name": "DocumentPart",
+              "newParameterName": "documentpart"
+            },
+            {
+              "name": "DocumentVersion",
+              "newParameterName": "documentversion"
+            },
+            {
+              "name": "SameClassfctnReaction",
+              "newParameterName": "sameclassfctnreaction"
+            },
+            {
+              "name": "ClassStandardOrgName",
+              "newParameterName": "classstandardorgname"
+            },
+            {
+              "name": "ClassStandardNumber",
+              "newParameterName": "classstandardnumber"
+            },
+            {
+              "name": "ClassStandardStartDate",
+              "newParameterName": "classstandardstartdate"
+            },
+            {
+              "name": "ClassStandardVersionStartDate",
+              "newParameterName": "classstandardversionstartdate"
+            },
+            {
+              "name": "ClassStandardVersion",
+              "newParameterName": "classstandardversion"
+            },
+            {
+              "name": "ClassStandardCharcTable",
+              "newParameterName": "classstandardcharctable"
+            },
+            {
+              "name": "ClassIsLocal",
+              "newParameterName": "classislocal"
+            },
+            {
+              "name": "ValidityStartDate",
+              "newParameterName": "validitystartdate"
+            },
+            {
+              "name": "ValidityEndDate",
+              "newParameterName": "validityenddate"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_to_valuation_in_a_productclasscharc",
+    "title": "list_to_Valuation_in_A_ProductClassCharc_for_api_clfn_product_srv",
+    "description": "Navigate from A_ProductClassCharc to related A_ProductCharcValueType entities via the 'to_Valuation' navigation property. Supports OData query options for filtering, sorting, paging, expanding, counting, and selecting specific properties. If the structure of the entity is not known, call get_metadata_api_clfn_product_srv tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClassCharc",
+        "navigationProperty": {
+          "name": "to_Valuation",
+          "crudOperation": "read",
+          "parameters": [
+            {
+              "name": "filter"
+            },
+            {
+              "name": "select"
+            },
+            {
+              "name": "orderby"
+            },
+            {
+              "name": "top"
+            },
+            {
+              "name": "skip"
+            },
+            {
+              "name": "expand"
+            },
+            {
+              "name": "inlinecount"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_to_valuation_in_a_productclasscharc",
+    "title": "count_to_Valuation_in_A_ProductClassCharc_for_api_clfn_product_srv",
+    "description": "Count A_ProductCharcValueType entities accessible via the 'to_Valuation' navigation property of A_ProductClassCharc in the api_clfn_product_srv service. Returns the total number of matching entities.",
+    "odataType": {
+      "entitySet": {
+        "name": "A_ProductClassCharc",
+        "navigationProperty": {
+          "name": "to_Valuation",
+          "crudOperation": "count",
+          "parameters": [
+            {
+              "name": "filter"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "ClassInternalID",
+            "newParameterName": "classinternalid"
+          },
+          {
+            "name": "CharcInternalID",
+            "newParameterName": "charcinternalid"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "dataserviceversion"
+        },
+        {
+          "name": "sap-message"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,50 @@
+apiVersion: asset.sap/v1
+kind: Asset
+type: agent
+
+metadata:
+  name: product-master-data-agent
+  description: Answers natural language questions from Sales Representatives about product master data including descriptions, classifications, availability, and pricing procedures using SAP S/4HANA data.
+
+provides:
+  apis:
+    - name: product-master-data-agent
+      kind: a2a
+      ordId: customer.build:apiResource:product-master-data-bed9e.product-master-data-agent:v1
+
+container:
+  buildPath: .
+  port: 5000
+
+probes:
+  startup:
+    path: /.well-known/agent.json
+    periodSeconds: 5
+    timeoutSeconds: 3
+    failureThreshold: 18
+  liveness:
+    path: /.well-known/agent.json
+    initialDelaySeconds: 15
+    periodSeconds: 10
+    timeoutSeconds: 5
+    failureThreshold: 3
+  readiness:
+    path: /.well-known/agent.json
+    initialDelaySeconds: 5
+    periodSeconds: 5
+    timeoutSeconds: 3
+    failureThreshold: 3
+
+requires:
+  - name: sap-s4-product-srv-mcp-server
+    kind: mcp-server
+    ordId: customer.build:apiResource:product-master-data-bed9e.sap-s4-product-srv-mcp-server:v1
+  - name: sap-s4-clfn-product-srv-mcp-server
+    kind: mcp-server
+    ordId: customer.build:apiResource:product-master-data-bed9e.sap-s4-clfn-product-srv-mcp-server:v1
+  - name: sap-s4-product-availy-info-0001-mcp-server
+    kind: mcp-server
+    ordId: customer.build:apiResource:product-master-data-bed9e.sap-s4-product-availy-info-0001-mcp-server:v1
+  - name: sap-s4-slspricingprocedure-srv-mcp-server
+    kind: mcp-server
+    ordId: customer.build:apiResource:product-master-data-bed9e.sap-s4-slspricingprocedure-srv-mcp-server:v1

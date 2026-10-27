@@ -1,0 +1,2342 @@
+[
+  {
+    "name": "get_metadata_sap_self",
+    "title": "get_metadata_sap_self",
+    "description": "Get metadata of the OData service with optional filtering to reduce token consumption.\nReturns the metadata in XML format, which can be used to discover available entities and their properties.\nCall this endpoint every time before you call other tools to ensure understanding of the schema.\nBased on the metadata, you can dynamically create an OData request.\n\nUse filtering parameters to get specific metadata sections. Without parameters, this tool returns the complete XML metadata (which might be huge).\nOnly use the specified enum values for the filtering parameters.\n",
+    "odataType": {
+      "metadataRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "batch_for_sap_self",
+    "title": "batch_for_sap_self",
+    "description": "Execute multiple OData operations in a single batch request using the $batch endpoint. This allows you to combine multiple tool calls into one HTTP request, improving efficiency when performing multiple operations.",
+    "odataType": {
+      "batchRequest": {},
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_productassignedsalesdocitem_for_sap_self",
+    "title": "list_ProductAssignedSalesDocItem_for_sap_self",
+    "description": "Retrieve a list of entities from the ProductAssignedSalesDocItem collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSalesDocItem",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "count"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_productassignedsalesdocitem_for_sap_self",
+    "title": "get_ProductAssignedSalesDocItem_for_sap_self",
+    "description": "Retrieve a single entity by its key from the ProductAssignedSalesDocItem collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSalesDocItem",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "SalesDocument",
+            "newParameterName": "salesdocument"
+          },
+          {
+            "name": "SalesDocumentItem",
+            "newParameterName": "salesdocumentitem"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_productassignedsalesdocitem_for_sap_self",
+    "title": "count_ProductAssignedSalesDocItem_for_sap_self",
+    "description": "Get the total count of entities in the ProductAssignedSalesDocItem collection in the sap_self service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSalesDocItem",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_productassignedsoldtoparty_for_sap_self",
+    "title": "list_ProductAssignedSoldToParty_for_sap_self",
+    "description": "Retrieve a list of entities from the ProductAssignedSoldToParty collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSoldToParty",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "count"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_productassignedsoldtoparty_for_sap_self",
+    "title": "get_ProductAssignedSoldToParty_for_sap_self",
+    "description": "Retrieve a single entity by its key from the ProductAssignedSoldToParty collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSoldToParty",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "SoldToParty",
+            "newParameterName": "soldtoparty"
+          },
+          {
+            "name": "SoldToPartySpecialStockType",
+            "newParameterName": "soldtopartyspecialstocktype"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_productassignedsoldtoparty_for_sap_self",
+    "title": "count_ProductAssignedSoldToParty_for_sap_self",
+    "description": "Get the total count of entities in the ProductAssignedSoldToParty collection in the sap_self service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSoldToParty",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_productmrparea_for_sap_self",
+    "title": "list_ProductMRPArea_for_sap_self",
+    "description": "Retrieve a list of entities from the ProductMRPArea collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "count"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_productmrparea_for_sap_self",
+    "title": "get_ProductMRPArea_for_sap_self",
+    "description": "Retrieve a single entity by its key from the ProductMRPArea collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_productmrparea_for_sap_self",
+    "title": "count_ProductMRPArea_for_sap_self",
+    "description": "Get the total count of entities in the ProductMRPArea collection in the sap_self service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_productmrpareabatch_for_sap_self",
+    "title": "list_ProductMRPAreaBatch_for_sap_self",
+    "description": "Retrieve a list of entities from the ProductMRPAreaBatch collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "count"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_productmrpareabatch_for_sap_self",
+    "title": "get_ProductMRPAreaBatch_for_sap_self",
+    "description": "Retrieve a single entity by its key from the ProductMRPAreaBatch collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "Batch",
+            "newParameterName": "batch"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_productmrpareabatch_for_sap_self",
+    "title": "count_ProductMRPAreaBatch_for_sap_self",
+    "description": "Get the total count of entities in the ProductMRPAreaBatch collection in the sap_self service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "list_productstoragelocation_for_sap_self",
+    "title": "list_ProductStorageLocation_for_sap_self",
+    "description": "Retrieve a list of entities from the ProductStorageLocation collection in the sap_self service. Supports OData query options for filtering, sorting, ranking ($top), skipping ($skip), expanding related entities, counting, selecting specific properties. Only use attributes in the query options that are specified in the metadata. If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "crudOperation": "read",
+        "parameters": [
+          {
+            "name": "filter"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "orderby"
+          },
+          {
+            "name": "top"
+          },
+          {
+            "name": "skip"
+          },
+          {
+            "name": "expand"
+          },
+          {
+            "name": "count"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "get_productstoragelocation_for_sap_self",
+    "title": "get_ProductStorageLocation_for_sap_self",
+    "description": "Retrieve a single entity by its key from the ProductStorageLocation collection in the sap_self service. Provide the key property value(s) to identify the specific entity to retrieve. Supports OData query options for selecting specific properties ($select), expanding related entities ($expand). If the structure of the entity is not known, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "crudOperation": "readByKey",
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "StorageLocation",
+            "newParameterName": "storagelocation"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "select"
+          },
+          {
+            "name": "expand"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "retry-after"
+        },
+        {
+          "name": "asyncresult"
+        },
+        {
+          "name": "odata-error"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "count_productstoragelocation_for_sap_self",
+    "title": "count_ProductStorageLocation_for_sap_self",
+    "description": "Get the total count of entities in the ProductStorageLocation collection in the sap_self service. Supports OData $filter to count only entities matching specific criteria. Use this when you need to determine the total number of entities without retrieving the actual data. If you need to understand the available filter properties, call get_metadata_sap_self tool first to get the metadata.",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "crudOperation": "count",
+        "parameters": [
+          {
+            "name": "filter"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "erminecheckhorizon_on_sap_self_atprlvtproductmrparea_type",
+    "title": "action_DetermineCheckHorizon_on_sap_self_atprlvtproductmrparea_type",
+    "description": "OData bound action: DetermineCheckHorizon on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: SAP__self.ProductAvailabilityDetermineCheckHorizonResult_Type",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "operation": {
+          "name": "DetermineCheckHorizon",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityatdatetme_on_sap_self_atprlvtproductstorloc",
+    "title": "action_DetermineAvailabilityAtDateTme_on_sap_self_atprlvtproductstorloc_type",
+    "description": "OData bound action: DetermineAvailabilityAtDateTme on entity SAP__self.ATPRlvtProductStorLoc_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyAtDteTmeR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "operation": {
+          "name": "DetermineAvailabilityAtDateTme",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "ProductAvailabilityUTCDateTime",
+              "newParameterName": "productavailabilityutcdatetime"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "StorageLocation",
+            "newParameterName": "storagelocation"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "mavailabilitytimeseries_on_sap_self_atprlvtprodsalesdocitem_type",
+    "title": "action_DetmAvailabilityTimeSeries_on_sap_self_atprlvtprodsalesdocitem_type",
+    "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProdSalesDocItem_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSalesDocItem",
+        "operation": {
+          "name": "DetmAvailabilityTimeSeries",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "SalesDocument",
+            "newParameterName": "salesdocument"
+          },
+          {
+            "name": "SalesDocumentItem",
+            "newParameterName": "salesdocumentitem"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityatdatetme_on_sap_self_atprlvtproductmrpareabat",
+    "title": "action_DetermineAvailabilityAtDateTme_on_sap_self_atprlvtproductmrpareabatch_type",
+    "description": "OData bound action: DetermineAvailabilityAtDateTme on entity SAP__self.ATPRlvtProductMRPAreaBatch_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyAtDteTmeR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "operation": {
+          "name": "DetermineAvailabilityAtDateTme",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "ProductAvailabilityUTCDateTime",
+              "newParameterName": "productavailabilityutcdatetime"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "Batch",
+            "newParameterName": "batch"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityatdatetme_on_sap_self_atprlvtproductmrparea",
+    "title": "action_DetermineAvailabilityAtDateTme_on_sap_self_atprlvtproductmrparea_type",
+    "description": "OData bound action: DetermineAvailabilityAtDateTme on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyAtDteTmeR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "operation": {
+          "name": "DetermineAvailabilityAtDateTme",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "ProductAvailabilityUTCDateTime",
+              "newParameterName": "productavailabilityutcdatetime"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "mavailabilitytimeseries_on_sap_self_atprlvtproductmrpareabatch",
+    "title": "action_DetmAvailabilityTimeSeries_on_sap_self_atprlvtproductmrpareabatch_type",
+    "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProductMRPAreaBatch_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "operation": {
+          "name": "DetmAvailabilityTimeSeries",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "Batch",
+            "newParameterName": "batch"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "mavailabilitytimeseries_on_sap_self_atprlvtprodassgdsoldtopty",
+    "title": "action_DetmAvailabilityTimeSeries_on_sap_self_atprlvtprodassgdsoldtopty_type",
+    "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProdAssgdSoldToPty_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductAssignedSoldToParty",
+        "operation": {
+          "name": "DetmAvailabilityTimeSeries",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "SoldToParty",
+            "newParameterName": "soldtoparty"
+          },
+          {
+            "name": "SoldToPartySpecialStockType",
+            "newParameterName": "soldtopartyspecialstocktype"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityofqty_on_sap_self_atprlvtproductmrparea_type",
+    "title": "action_DetermineAvailabilityOfQty_on_sap_self_atprlvtproductmrparea_type",
+    "description": "OData bound action: DetermineAvailabilityOfQty on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyOfQtyR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "operation": {
+          "name": "DetermineAvailabilityOfQty",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "AvailableQuantityInBaseUnit",
+              "newParameterName": "availablequantityinbaseunit"
+            },
+            {
+              "name": "BaseUnit",
+              "newParameterName": "baseunit"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityofqty_on_sap_self_atprlvtproductmrpareabatch",
+    "title": "action_DetermineAvailabilityOfQty_on_sap_self_atprlvtproductmrpareabatch_type",
+    "description": "OData bound action: DetermineAvailabilityOfQty on entity SAP__self.ATPRlvtProductMRPAreaBatch_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyOfQtyR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPAreaBatch",
+        "operation": {
+          "name": "DetermineAvailabilityOfQty",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "AvailableQuantityInBaseUnit",
+              "newParameterName": "availablequantityinbaseunit"
+            },
+            {
+              "name": "BaseUnit",
+              "newParameterName": "baseunit"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          },
+          {
+            "name": "Batch",
+            "newParameterName": "batch"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "mavailabilitytimeseries_on_sap_self_atprlvtproductmrparea_type",
+    "title": "action_DetmAvailabilityTimeSeries_on_sap_self_atprlvtproductmrparea_type",
+    "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProductMRPArea_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductMRPArea",
+        "operation": {
+          "name": "DetmAvailabilityTimeSeries",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "ermineavailabilityofqty_on_sap_self_atprlvtproductstorloc_type",
+    "title": "action_DetermineAvailabilityOfQty_on_sap_self_atprlvtproductstorloc_type",
+    "description": "OData bound action: DetermineAvailabilityOfQty on entity SAP__self.ATPRlvtProductStorLoc_Type in the sap_self service. Returns: SAP__self.D_AvailyDetmAvailyOfQtyR",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "operation": {
+          "name": "DetermineAvailabilityOfQty",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "AvailableQuantityInBaseUnit",
+              "newParameterName": "availablequantityinbaseunit"
+            },
+            {
+              "name": "BaseUnit",
+              "newParameterName": "baseunit"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "StorageLocation",
+            "newParameterName": "storagelocation"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  },
+  {
+    "name": "mavailabilitytimeseries_on_sap_self_atprlvtproductstorloc_type",
+    "title": "action_DetmAvailabilityTimeSeries_on_sap_self_atprlvtproductstorloc_type",
+    "description": "OData bound action: DetmAvailabilityTimeSeries on entity SAP__self.ATPRlvtProductStorLoc_Type in the sap_self service. Returns: Collection(SAP__self.D_AvailyDetmAvailyTmeSersR)",
+    "odataType": {
+      "entitySet": {
+        "name": "ProductStorageLocation",
+        "operation": {
+          "name": "DetmAvailabilityTimeSeries",
+          "type": "action",
+          "parameters": [
+            {
+              "name": "ATPCheckingRule",
+              "newParameterName": "atpcheckingrule"
+            },
+            {
+              "name": "_DocumentAttributes",
+              "newParameterName": "documentattributes"
+            }
+          ]
+        },
+        "parameters": [
+          {
+            "name": "Product",
+            "newParameterName": "product"
+          },
+          {
+            "name": "StorageLocation",
+            "newParameterName": "storagelocation"
+          },
+          {
+            "name": "MRPArea",
+            "newParameterName": "mrparea"
+          }
+        ]
+      },
+      "responseHeaders": [
+        {
+          "name": "age"
+        },
+        {
+          "name": "cache-control"
+        },
+        {
+          "name": "expires"
+        },
+        {
+          "name": "last-modified"
+        },
+        {
+          "name": "x-request-id"
+        },
+        {
+          "name": "x-correlation-id"
+        },
+        {
+          "name": "content-type"
+        },
+        {
+          "name": "content-encoding"
+        },
+        {
+          "name": "content-language"
+        },
+        {
+          "name": "content-length"
+        },
+        {
+          "name": "odata-version"
+        },
+        {
+          "name": "etag"
+        },
+        {
+          "name": "location"
+        },
+        {
+          "name": "preference-applied"
+        },
+        {
+          "name": "vary"
+        },
+        {
+          "name": "sap-messages"
+        }
+      ]
+    }
+  }
+]
